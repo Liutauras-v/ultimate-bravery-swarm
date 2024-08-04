@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btnHardMode{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.champSelection {
+    display: block;
+}
+
+.champImg {
+    display: inline-block;
+    background-color: black;
+    width: 120px;
+    height: 120px;
+}
+
+.champImg:hover {
+    opacity: 0.7;
+}
+
+.items {
+    display: block;
+}
+
+.item {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+}
+
+.passives {
+    display: inline-block;
+    background-color: black;
+}
+
+.passive {
+    display: inline-block;
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 44px;
+}
