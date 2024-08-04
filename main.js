@@ -89,10 +89,10 @@ function renderChamps() {
     var html = "";
 
     championList.forEach(champion => {
-        html += `<div class="champImg" lolData="${champion.name}" style="background-image:url('/imgs/champs/${champion.name}.png')" onclick="renderItems('${champion.name}')"></div>`;
+        html += `<div class="champImg" lolData="${champion.name}" style="background-image:url('./imgs/champs/${champion.name}.png')" onclick="renderItems('${champion.name}')"></div>`;
     });
 
-    html += `<div class="champImg" lolData="Random" style="background-image:url('/imgs/champs/Random.png')" onclick="renderItemsRandom()"></div>`;
+    html += `<div class="champImg" lolData="Random" style="background-image:url('./imgs/champs/Random.png')" onclick="renderItemsRandom()"></div>`;
 
     div.innerHTML = html;
 }
@@ -180,13 +180,13 @@ function renderItems(champion) {
 
     html += "<div class='items'>";
     items.weapons.forEach(wpn => {
-        html += `<div class="item" style="background-image:url('/imgs/weapons/${wpn}.webp')"></div>`
+        html += `<div class="item" style="background-image:url('./imgs/weapons/${wpn}.webp')"></div>`
     });
     html += "</div>";
 
     html += "<div class='passives'>";
     items.passives.forEach(passive => {
-        html += `<div class="passive" style="background-image:url('/imgs/passives/${passive}.webp')"></div>`
+        html += `<div class="passive" style="background-image:url('./imgs/passives/${passive}.webp')"></div>`
     });
     html += "</div>";
 
